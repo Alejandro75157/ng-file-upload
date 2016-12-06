@@ -300,7 +300,7 @@
         if (fileList != null) {
           for (var j = 0; j < fileList.length; j++) {
             var file = fileList.item(j);
-            if (file.type || file.size > 0) {
+            if (file.type || file.size >= 0) {
               files.push(file);
               totalSize += file.size;
             }
